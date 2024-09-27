@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Vision</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="icon" href="Web Vision logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"> Web <span>Vision</span> </a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-circle-1"></div>
+        <div class="home-circle-2"></div>
+
+        <div class="home-content">
+            <h3>Hi</h3>
+            <h1>I'm <span>Yash</span></h1>
+            <h3 class="text-animation">
+                I'm a <span class="typewriter-text"></span>
+            </h3>
+            <p>
+                A passionate web developer with a strong background in creating dynamic, user-friendly websites and web
+                applications. Skilled in HTML, CSS, JavaScript, and modern front-end frameworks to deliver responsive
+                and visually appealing designs.
+            </p>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/yashbaid21/" target="_blank"><i
+                        class="bx bxl-linkedin-square"></i></a>
+                <a href="https://github.com/yashbaid21" target="_blank"><i class="bx bxl-github"></i></a>
+                <a href="https://www.instagram.com/_yashbaid_/" target="_blank"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.youtube.com/@codewithyash21" target="_blank"><i class="bx bxl-youtube"></i></a>
+            </div>
+
+            <a href="CV.pdf" class="btn">Download CV</a>
+
+        </div>
+
+        <div class="home-img">
+            <img src="Web Vision New.png" alt="" />
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-circle"></div>
+
+        <div class="about-img">
+            <img src="Web Vision New.png" alt="" />
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+
+            <h3 class="typewriter-text">I'm a <span>Developer</span></h3>
+
+            <p>
+                Motivated and detail-oriented Frontend Web Developer with a strong foundation in web design,
+                development, and digital marketing. Experienced in building responsive websites, applications, and
+                creative designs for clients. Passionate about combining technical expertise with creativity to deliver
+                user-friendly solutions. Founder of Web Vision, providing customized web and design services for diverse
+                client needs.
+
+            </p>
+
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+
+        <div class="service-container">
+            <div class="services-box">
+                <i class="fa-solid fa-rectangle-ad"></i>
+
+                <h3>Advertisement Templates</h3>
+                <p>
+                    We create eye-catching and customizable advertisement templates designed to grab attention and drive
+                    engagement for your marketing campaigns.
+                </p>
+
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-square-poll-vertical"></i>
+
+                <h3>Website Development</h3>
+                <p>
+                    We build modern, responsive websites tailored to your brand’s needs, ensuring a seamless user
+                    experience across all devices.
+                </p>
+
+            </div>
+
+            <div class="services-box">
+                <i class="bx bx-code-block"></i>
+
+                <h3>Webpage Development</h3>
+                <p>
+                    Our team develops optimized and visually appealing webpages that enhance user interaction and align
+                    with your business goals.
+                </p>
+
+            </div>
+
+            <div class="services-box">
+                <i class="fa-brands fa-product-hunt"></i>
+
+                <h3>Landing Pages Development</h3>
+                <p>
+                    We design and develop high-converting landing pages to capture leads and boost conversions for your
+                    marketing and sales efforts.
+                </p>
+
+            </div>
+
+            <div class="services-box">
+                <i class="bx bxs-palette"></i>
+
+                <h3>Poster Designing</h3>
+                <p>
+                    Our creative poster designs make a bold impact, delivering your message effectively for events,
+                    promotions, or branding purposes.
+                </p>
+
+            </div>
+
+            <div class="services-box">
+                <i class="bx bxs-devices"></i>
+
+                <h3>Banner Designing</h3>
+                <p>
+                    We craft professional banners that capture attention and communicate your brand’s message with
+                    clarity and creativity.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="form-wrapper">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="96632f78-4f67-4d05-823c-0068bff748a5">
+                <h2>Contact Me</h2>
+
+                <div class="form-group">
+                    <input type="text" id="fullName" name="fullName" required>
+                    <label for="fullName">Full Name</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" required>
+                    <label for="subject">Subject</label>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+
+                <button type="submit">Submit</button>
+
+                <div id="responseMessage"></div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/yash-baid-434bb3276/" target="_blank"><i
+                    class="bx bxl-linkedin-square"></i></a>
+            <a href="https://github.com/yashbaid21" target="_blank"><i class="bx bxl-github"></i></a>
+            <a href="https://www.instagram.com/_yashbaid_/" target="_blank"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.youtube.com/@codewithyash21" target="_blank"><i class="bx bxl-youtube"></i></a>
+            <p class="copyright">
+                © Web Vision All rights reserved. Licensed
+                <br>
+                +91 9352842962
+                <br>
+                ybaid94@gmail.com
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+        integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
